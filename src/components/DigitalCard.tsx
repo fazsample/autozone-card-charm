@@ -84,15 +84,16 @@ const DigitalCard = () => {
         {/* Card overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 to-black/50 rounded-2xl"></div>
         
-        <div className="relative z-10 space-y-6">
-          {/* Banner Section */}
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <img 
-              src={banner} 
-              alt="AutoZone Banner" 
-              className="w-full h-20 object-cover"
-            />
-          </div>
+        {/* Banner Section - Full Width */}
+        <div className="relative z-10 -m-6 sm:-m-8 mb-6 sm:mb-8 rounded-t-2xl overflow-hidden shadow-lg">
+          <img 
+            src={banner} 
+            alt="AutoZone Banner" 
+            className="w-full h-20 object-cover"
+          />
+        </div>
+        
+        <div className="relative z-10 space-y-6 px-6 sm:px-8">
 
           {/* Logo and Business Info - Horizontal Layout */}
           <div className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
