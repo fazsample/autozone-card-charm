@@ -84,28 +84,38 @@ const DigitalCard = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 to-black/50 rounded-2xl"></div>
         
         <div className="relative z-10 space-y-6">
-          {/* Logo Section */}
-          <div className="flex justify-center">
-            <div className="bg-white p-3 rounded-xl border-4 border-white shadow-lg">
-              <img 
-                src={logo} 
-                alt="AutoZone Logo" 
-                className="w-16 h-16 object-contain"
-              />
+          {/* Banner Section */}
+          <div className="bg-gradient-to-r from-autozone-blue/20 to-autozone-blue/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+            <div className="text-center">
+              <h2 className="text-lg font-bold text-white tracking-wider">
+                DIGITAL VISITING CARD
+              </h2>
             </div>
           </div>
 
-          {/* Business Info */}
-          <div className="text-center space-y-2">
-            <h1 className="text-2xl font-bold text-white tracking-wider">
-              AUTOZONE
-            </h1>
-            <p className="text-sm font-medium text-white/90 tracking-wide">
-              WHEEL ALIGNMENT & TYRES
-            </p>
-            <p className="text-sm font-medium text-white/80">
-              KARMANTHODY
-            </p>
+          {/* Logo and Business Info - Horizontal Layout */}
+          <div className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+            {/* Logo */}
+            <div className="bg-white p-2 rounded-lg border-2 border-white shadow-lg flex-shrink-0">
+              <img 
+                src={logo} 
+                alt="AutoZone Logo" 
+                className="w-12 h-12 object-contain"
+              />
+            </div>
+            
+            {/* Business Info */}
+            <div className="flex-1 text-left">
+              <h1 className="text-xl font-bold text-white tracking-wider">
+                AUTOZONE
+              </h1>
+              <p className="text-sm font-medium text-white/90 tracking-wide">
+                WHEEL ALIGNMENT & TYRES
+              </p>
+              <p className="text-sm font-medium text-white/80">
+                KARMANTHODY
+              </p>
+            </div>
           </div>
 
           {/* Action Buttons Row */}
