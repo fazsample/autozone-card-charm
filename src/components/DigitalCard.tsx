@@ -72,7 +72,7 @@ const DigitalCard = () => {
       
       {/* Main Card */}
       <div 
-        className="relative max-w-sm w-full rounded-2xl p-8 shadow-card animate-float"
+        className="relative w-full max-w-sm sm:max-w-sm rounded-2xl p-6 sm:p-8 shadow-card animate-float"
         style={{
           backgroundImage: `url(${cardBg})`,
           backgroundSize: 'cover',
