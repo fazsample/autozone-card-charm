@@ -6,6 +6,7 @@ import { useState } from "react";
 import mainBg from "@/assets/main-bg.png";
 import cardBg from "@/assets/card-bg.png";
 import logo from "@/assets/logo.png";
+import banner from "@/assets/banner.png";
 
 const DigitalCard = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -85,12 +86,12 @@ const DigitalCard = () => {
         
         <div className="relative z-10 space-y-6">
           {/* Banner Section */}
-          <div className="bg-gradient-to-r from-autozone-blue/20 to-autozone-blue/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-            <div className="text-center">
-              <h2 className="text-lg font-bold text-white tracking-wider">
-                DIGITAL VISITING CARD
-              </h2>
-            </div>
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <img 
+              src={banner} 
+              alt="AutoZone Banner" 
+              className="w-full h-20 object-cover"
+            />
           </div>
 
           {/* Logo and Business Info - Horizontal Layout */}
