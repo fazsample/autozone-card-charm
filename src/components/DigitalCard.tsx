@@ -89,7 +89,7 @@ const DigitalCard = () => {
           <img 
             src={banner} 
             alt="AutoZone Banner" 
-            className="w-full h-20 object-cover"
+            className="w-full h-50 object-cover"
           />
         </div>
         
